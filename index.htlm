@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriConnect - Farm to Market</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f3f6f4;
+        }
+        header {
+            background-color: #2d6a4f;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #40916c;
+        }
+        nav a {
+            color: white;
+            padding: 1em;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #2d6a4f;
+        }
+        .container {
+            padding: 2em;
+        }
+        .product {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 1em;
+            margin: 1em 0;
+        }
+        .product h3 {
+            margin: 0 0 0.5em;
+        }
+        .product button {
+            background-color: #52b788;
+            color: white;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #40916c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AgriConnect</h1>
+        <p>Connecting Farmers Directly to Buyers</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container" id="products">
+        <h2>Available Farm Products</h2>
+        <div class="product">
+            <h3>Fresh Tomatoes</h3>
+            <p>Price: ₦800 per basket</p>
+            <button onclick="orderProduct('Fresh Tomatoes')">Order Now</button>
+        </div>
+        <div class="product">
+            <h3>Maize (Dry)</h3>
+            <p>Price: ₦15,000 per bag</p>
+            <button onclick="orderProduct('Maize (Dry)')">Order Now</button>
+        </div>
+        <div class="product">
+            <h3>Yam Tubers</h3>
+            <p>Price: ₦500 per tuber</p>
+            <button onclick="orderProduct('Yam Tubers')">Order Now</button>
+        </div>
+    </div>
+    <footer style="text-align:center; padding:1em; background:#2d6a4f; color:white;">
+        <p>&copy; 2025 AgriConnect. All rights reserved.</p>
+    </footer>
+    <script>
+        function orderProduct(productName) {
+            alert("Thank you for ordering " + productName + "! We will contact you soon.");
+        }
+    </script>
+</body>
+</html>
+
